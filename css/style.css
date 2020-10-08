@@ -74,7 +74,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
-# Welcome
+# Welcome Hero
 --------------------------------------------------------------*/
 #hero {
   display: table;
@@ -83,16 +83,29 @@ h1, h2, h3, h4, h5, h6 {
   background: url(../img/slider1.jpg) top center fixed;
   background-size: cover;
 }
-
-#hero .hero-logo {
+#hero2 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/slider2.jpg) top center fixed;
+  background-size: cover;
+}
+#hero3 {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/slider3.jpg) top center fixed;
+  background-size: cover;
+}
+.classHero .hero-logo {
   margin: 10px;
 }
 
-#hero .hero-logo img {
+.classHero .hero-logo img {
   max-width: 23%;
 }
 
-#hero .hero-container {
+.classHero .hero-container {
   background: rgba(37, 102, 187, 0.2);
   display: table-cell;
   margin: 0;
@@ -101,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {
   vertical-align: middle;
 }
 
-#hero h1 {
+.classHero h1 {
   margin: 30px 0 10px 0;
   font-weight: 700;
   line-height: 48px;
@@ -110,33 +123,32 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
+  .classHero h1 {
     font-size: 28px;
     line-height: 36px;
   }
 }
 
-#hero h2 {
+.classHero h2 {
   color: #fff;
   margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
-  #hero h2 {
+  .classHero h2 {
     font-size: 24px;
     line-height: 26px;
     margin-bottom: 30px;
   }
-  #hero h2 .rotating {
+  .classHero h2 .rotating {
     display: block;
   }
 }
-
-#hero .rotating > .animated {
+.classHero .rotating > .animated {
   display: inline-block;
 }
 
-#hero .actions a {
+.classHero .actions a {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 500;
@@ -149,24 +161,24 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px;
 }
 
-#hero .btn-get-started {
+.classHero .btn-get-started {
   background: #03eb8ad7;
   border: 2px solid #03eb8ad7;
   color: #fff;
 }
 
-#hero .btn-get-started:hover {
+.classHero .btn-get-started:hover {
   background: none;
   border: 2px solid #fff;
   color: #fff;
 }
 
-#hero .btn-services {
+.classHero .btn-services {
   border: 2px solid #fff;
   color: #fff;
 }
 
-#hero .btn-services:hover {
+.classHero .btn-services:hover {
   background: #03eb8ad7;
   border: 2px solid #03eb8ad7;
 }
@@ -175,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #66CDAA;
+  background: #125a42;
   padding: 20px 0;
   height: 90px;
 }
@@ -184,16 +196,16 @@ h1, h2, h3, h4, h5, h6 {
   float: left;
 }
 
-#header #logo h1 {
-  font-size: 50px;
+/* #header #logo h1 {
+  font-size: 100px;
   margin: 0;
-  padding: 6px 0;
+  padding: 3px 0;
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
+} */
 
 #header #logo h1 a, #header #logo h1 a:hover {
   color: #fff;
@@ -534,7 +546,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 30px;
   color: #fff;
 }
-.custom-icon:before{
+.custom-icon:before, .custom-icon:after{
   font-size: 50px;
   color: #03eb8ad7;
   margin-left: 0;
@@ -649,6 +661,73 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 30px;
   text-decoration: none;
   text-align: center;
+}
+
+/* Products Section
+--------------------------------*/
+.contenedor-productos .producto-item{
+  width: 100%;
+  position: relative;
+  height:250px;
+  margin-bottom: 10px;
+}
+.producto-item{
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+}
+.diseño-boton{
+  color: #03eb8ad7;
+  text-decoration: none;
+}
+
+.carrito-total{
+	background: #03eb8ad7;
+	cursor:  pointer;
+	padding: 5px 10px;
+  position: relative;
+  color: #fff;
+}
+.bolsa{
+	position: absolute;
+	background: #fff;
+	display: none;
+	padding:  5px;
+	z-index:  9999;
+}
+.simpleCart_items{
+	width: 350px;
+}
+.simpleCart_shelfItem{
+	padding-top:  15px;
+	padding-bottom: 15px;
+}
+.item-image img{
+	height: auto;
+	width: 80px;
+}
+.item_image,
+.item_Quantity,
+.item_price{
+	margin-bottom: 15px;
+}
+.item_price{
+	font-size: 2rem;
+}
+.item-remove a{
+	color: #EC2626;
+}
+
+.item_add{
+	border-radius: 21.5px;
+	border:  thin solid;
+	transition: .5s;
+	padding:  5px 10px;
+}
+.item_add:hover{
+	background: #41DA7B;
+	border:  thin solid #2DC466;
+	color: #fff;
 }
 
 /* Contact Section
